@@ -39,13 +39,13 @@ let allowedOrigins = ['http://localhost:3001', 'http://localhost:1234', 'http://
 // Import Passport.js configurations
 require('./models/config/Passport')(passport);
 
-const MONGO_URI = 'mongodb://localhost:27017/swar_al-raqiyat_DB';
+// const MONGO_URI = 'mongodb://localhost:27017/swar_al-raqiyat_DB';
 
 // Comment this before puhsing to HEROKU
-mongoose.connect('mongodb+srv://Alqatrony:Al1357912345678@alqatronycluster.mxoml6c.mongodb.net/swar_al-raqiyat_DB?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+// mongoose.connect('mongodb+srv://Alqatrony:Al1357912345678@alqatronycluster.mxoml6c.mongodb.net/swar_al-raqiyat_DB?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // connecting to the database
-// mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 // mongoose
 //   .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
