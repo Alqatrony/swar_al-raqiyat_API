@@ -37,7 +37,7 @@ app.use('/users', userRoutes);
 let allowedOrigins = ['http://localhost:3001', 'http://localhost:1234', 'http://localhost:4200', 'https://alqatrony.github.io'];
 
 // Import Passport.js configurations
-require('./config/passport')(passport);
+require('./models/config/passport')(passport);
 
 const MONGO_URI = 'mongodb://localhost:27017/swar_al-raqiyat_DB';
 
